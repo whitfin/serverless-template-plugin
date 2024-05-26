@@ -1,0 +1,36 @@
+{
+  "name": "serverless-template-plugin",
+  "version": "1.0.0",
+  "description": "A small templating plugin for Serverless CloudFormation",
+  "author": {
+    "name": "Isaac Whitfield",
+    "email": "iw@whitfin.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/whitfin/serverless-template-plugin.git"
+  },
+  "bugs": {
+    "email": "iw@whitfin.com",
+    "url": "http://github.com/whitfin/serverless-template-plugin/issues"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "keywords": [
+    "aws",
+    "cloudformation",
+    "template",
+    "serverless",
+    "serverless.com"
+  ],
+  "scripts": {
+    "lint": "eslint lib/*.js *.js"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "lodash": "^4.17.21"
+  },
+  "peerDependencies": {
+    "serverless": "3"
+  }
+}
