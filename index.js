@@ -28,15 +28,16 @@ class ServerlessTemplatePlugin {
      */
     async resolve(options) {
         // flip the params around
-        let address = options.params[0];
         let params = options.address || '';
+        let address = options.params[0];
+        let separator = options.params[1] || /\s+/;
 
         // read the file and convert to string
         let buffer = await fs.readFile(address);
         let content = buffer.toString();
 
         // map all the param pairs into a list of replacers
-        let replacers = params.split(';').flatMap(function (pair) {
+        let replacers = params.split(separator).flatMap(function (pair) {
 
             // skip any invalid pairs
             let parts = pair.split('=');

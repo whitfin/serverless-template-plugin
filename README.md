@@ -35,24 +35,27 @@ The idea is to allow (minimal) templating via find/replace of values to avoid
 having to continuously redefine them inside templates. This is done by including
 a template file via the `template(path):replacements` syntax.
 
-Replacements are separated by `;` in the form `param1=1;param2=2;param3=3`, which
-leaves your template fairly easy to understand (even if the syntax is a bit ugly).
-You can then access these replacements in your templated file via `${value}`.
+Replacements are separated by a spec in the form `param1=1 param2=2 param3=3`,
+which leaves your template fairly easy to understand. You can then access these
+replacements in your templated file via `${value}`.
 
 ```yaml
 # Import file.yml and replace param1, param2 and param3
-- template(./file.yml):param1=1;param2=2;param3=3}
+- template(./file.yml):param1=1 param2=2 param3=3}
 
 # JSON is also supported in the same way as YAML
-- template(./file.json):param1=1;param2=2;param3=3}
+- template(./file.json):param1=1 param2=2 param3=3}
+
+# If you want to use something that isn't a space
+- template(./file.yml,&):param1=1&param2=2&param3=3}
 
 # Whitespace is trimmed to allow better readability
-- template(./file.json):param1=1; param2=2; param3=3}
-- template(./file.json):; param1=1; param2=2; param3=3}
+- template(./file.yml,;):param1=1; param2=2; param3=3}
 ```
 
 Just like the Serverless `file` directive, this plugin works with both `yml`
-and `json` files, which are determined by the file extension provided.
+and `json` files. This is determined by the file extension provided, so please
+make sure they match correctly.
 
 ## Simple Example
 
