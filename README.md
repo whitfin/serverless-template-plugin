@@ -105,23 +105,23 @@ are provided by [lodash](https://lodash.com) so you can check the docs there
 for further details on how they work. The current list of transformers is
 shown below:
 
-| Transformer             | Description                                               |
-|-------------------------|-----------------------------------------------------------|
-| `${value:camelCase}`    | Converts the value to lower case                          |
-| `${value:capitalize}`   | Converts the value to upper case                          |
-| `${value:escape}`       | Converts HTML characters to HTML entities                 |
-| `${value:escapeRegExp}` | Converts RegExp special characters to their escaped form  |
-| `${value:kebabCase}`    | Converts the value to kebab case                          |
-| `${value:lower}`        | Converts the value to lower case                          |
-| `${value:lowerCase}`    | Converts the value to lower case as space separated words |
-| `${value:lowerFirst}`   | Converts the first character in the value to lower case   |
-| `${value:pascalCase}`   | Converts the value to pascal case                         |
-| `${value:snakeCase}`    | Converts the value to snake case                          |
-| `${value:startCase}`    | Converts the value to start case                          |
-| `${value:unescape}`     | Converts HTML entities to their corresponding characters  |
-| `${value:upper}`        | Converts the value to upper case                          |
-| `${value:upperCase}`    | Converts the value to upper case as space separated words |
-| `${value:upperFirst}`   | Converts the first character in the value to upper case   |
+| Transformer             | Description                                                        |
+|-------------------------|--------------------------------------------------------------------|
+| `${value:camel}`        | Converts the value to camelCase                                    |
+| `${value:capitalize}`   | Converts the first letter to upper case and the rest to lower case |
+| `${value:escape}`       | Converts HTML characters to HTML entities                          |
+| `${value:escapeRegExp}` | Converts RegExp special characters to their escaped form           |
+| `${value:kebab}`        | Converts the value to kebab-case                                   |
+| `${value:lower}`        | Converts the value to lower case                                   |
+| `${value:lowerFirst}`   | Converts the first character in the value to lower case            |
+| `${value:lowerWords}`   | Converts the value to lower case separated by spaces               |
+| `${value:pascal}`       | Converts the value to PascalCase                                   |
+| `${value:snake}`        | Converts the value to snake_case                                   |
+| `${value:start}`        | Converts the value to Start Case                                   |
+| `${value:unescape}`     | Converts HTML entities to their corresponding characters           |
+| `${value:upper}`        | Converts the value to UPPER CASE                                   |
+| `${value:upperFirst}`   | Converts the first character in the value to upper case            |
+| `${value:upperWords}`   | Converts the value to UPPER CASE separated by spaces               |
 
 These can be added easily, so feel free to file PRs for things which can be
 useful when creating templates.
