@@ -115,6 +115,7 @@ shown below:
 | `${value:lower}`        | Converts the value to lower case                          |
 | `${value:lowerCase}`    | Converts the value to lower case as space separated words |
 | `${value:lowerFirst}`   | Converts the first character in the value to lower case   |
+| `${value:pascalCase}`   | Converts the value to pascal case                         |
 | `${value:snakeCase}`    | Converts the value to snake case                          |
 | `${value:startCase}`    | Converts the value to start case                          |
 | `${value:unescape}`     | Converts HTML entities to their corresponding characters  |
