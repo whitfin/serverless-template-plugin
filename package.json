@@ -1,6 +1,6 @@
 {
   "name": "serverless-template-plugin",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A small templating plugin for Serverless CloudFormation",
   "author": {
     "name": "Isaac Whitfield",
