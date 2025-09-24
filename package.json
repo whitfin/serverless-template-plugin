@@ -26,6 +26,9 @@
   "scripts": {
     "lint": "eslint lib/*.js *.js"
   },
+  "dependencies": {
+    "child-process-ext": "^3.0.2"
+  },
   "devDependencies": {
     "eslint": "^8.57.0",
     "lodash": "^4.17.21"
