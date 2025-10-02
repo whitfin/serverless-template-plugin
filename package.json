@@ -27,11 +27,11 @@
     "lint": "eslint lib/*.js *.js"
   },
   "dependencies": {
-    "child-process-ext": "^3.0.2"
+    "child-process-ext": "^3.0.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "lodash": "^4.17.21"
+    "eslint": "^8.57.0"
   },
   "peerDependencies": {
     "serverless": "3 - 4"
